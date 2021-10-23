@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-23T15:18:27.635Z</updated>
+  <updated>2021-10-23T15:27:39.325Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2021/10/23/C-tx/"/>
     <id>http://example.com/2021/10/23/C-tx/</id>
     <published>2021-10-23T14:43:42.000Z</published>
-    <updated>2021-10-23T15:18:27.635Z</updated>
+    <updated>2021-10-23T15:27:39.325Z</updated>
     
     <content type="html"><![CDATA[<p>在C语言设计基础的习题中，<br>编程实现输入一个无符号整数，分别输出其低四位和高四位。<br>这个题目用到了按位运算。<br>运算符 含义 描述<br>&amp; 按位与 如果两个相应的二进制位都为1，则该位的结果值为1，否则为0<br>| 按位或 两个相应的二进制位中只要有一个为1，该位的结果值为1<br>^ 按位异或 若参加运算的两个二进制位值相同则为0，否则为1<br>&lt;&lt; 左移 用来将一个数的各二进制位全部左移N位，右补0</p><blockquote><blockquote><p>右移 将一个数的各二进制位右移N位，移到右端的低位被舍弃，对于无符号数，高位补0<br>在这个题目中，我学到了&amp;符号的运用，也明白了按位运算中&amp;和|的区别，其中&amp;的用法是取二进制中我所要的<br>位置，而|则是给我要取1的位置赋值，再者我也学到了移位&lt;&lt;和&gt;&gt;的运用，题目中的第四位，我用的是int字符<br>类型，所以我用&amp;0xff的方法来取值，高四位直接用的移位，最终我的代码是这样的。<br>#include &lt;stdio.h&gt;<br>int main()<br>{<br>    unsigned int a;</p></blockquote></blockquote><pre><code>scanf(&quot;%d&quot;,&amp;a);printf(&quot;高四位是%u\n&quot;,a&gt;&gt;28);printf(&quot;低四位是%u\n&quot;,a&amp;0xff);return 0;</code></pre><p>}<br>我认为这就是唯一的解法了，但是老师的讲评让我学到了一个新的思路。<br>在取低四位时还是用移位的方法，直接用（a&lt;&lt;28）&gt;&gt;28，这是我没有想到的，这确实让我更深刻理解了移位的<br>作用。<br>而在学按位运算时，还有一个符号^，这个符号用来对指定位置的翻转，我觉得这个可以用来取一个无符号数的<br>指定位置的反码，现在的学习和题目中暂时还用不到这个符号，后期希望能更多用到|和^符号。</p>]]></content>
     
