@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>C tx | ZzzzzのBlog</title>
+  <title>web1 | ZzzzzのBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="在C语言设计基础的习题中，编程实现输入一个无符号整数，分别输出其低四位和高四位。这个题目用到了按位运算。运算符 含义 描述&amp; 按位与 如果两个相应的二进制位都为1，则该位的结果值为1，否则为0。| 按位或 两个相应的二进制位中只要有一个为1，该位的结果值为1。^ 按位异或 若参加运算的两个二进制位值相同则为0，否则为1。还有&lt;&lt;和&gt;&gt;。在这个题目中，我学到了&amp;amp">
+  <meta name="description" content="初入WEB了解到了两种请求http方式1、get2、post两者的区别为1、GET在浏览器回退时是无害的，而POST会再次提交请求。2、GET产生的URL地址可以被Bookmark，而POST不可以。3、GET请求会被浏览器主动cache，而POST不会，除非手动设置。4、GET请求只能进行url编码，而POST支持多种编码方式。5、GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C tx">
-<meta property="og:url" content="http://example.com/2021/10/23/C-tx/index.html">
+<meta property="og:title" content="web1">
+<meta property="og:url" content="http://example.com/2021/11/09/web1/index.html">
 <meta property="og:site_name" content="ZzzzzのBlog">
-<meta property="og:description" content="在C语言设计基础的习题中，编程实现输入一个无符号整数，分别输出其低四位和高四位。这个题目用到了按位运算。运算符 含义 描述&amp; 按位与 如果两个相应的二进制位都为1，则该位的结果值为1，否则为0。| 按位或 两个相应的二进制位中只要有一个为1，该位的结果值为1。^ 按位异或 若参加运算的两个二进制位值相同则为0，否则为1。还有&lt;&lt;和&gt;&gt;。在这个题目中，我学到了&amp;amp">
+<meta property="og:description" content="初入WEB了解到了两种请求http方式1、get2、post两者的区别为1、GET在浏览器回退时是无害的，而POST会再次提交请求。2、GET产生的URL地址可以被Bookmark，而POST不可以。3、GET请求会被浏览器主动cache，而POST不会，除非手动设置。4、GET请求只能进行url编码，而POST支持多种编码方式。5、GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-10-23T14:43:42.000Z">
-<meta property="article:modified_time" content="2021-10-23T15:40:08.047Z">
+<meta property="article:published_time" content="2021-11-09T13:54:11.000Z">
+<meta property="article:modified_time" content="2021-11-09T14:00:39.646Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -73,10 +73,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-C-tx" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-web1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/10/23/C-tx/" class="article-date">
-  <time class="dt-published" datetime="2021-10-23T14:43:42.000Z" itemprop="datePublished">2021-10-23</time>
+    <a href="/2021/11/09/web1/" class="article-date">
+  <time class="dt-published" datetime="2021-11-09T13:54:11.000Z" itemprop="datePublished">2021-11-09</time>
 </a>
     
   </div>
@@ -87,7 +87,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      C tx
+      web1
     </h1>
   
 
@@ -95,20 +95,13 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>在C语言设计基础的习题中，<br>编程实现输入一个无符号整数，分别输出其低四位和高四位。<br>这个题目用到了按位运算。<br>运算符 含义 描述<br>&amp; 按位与 如果两个相应的二进制位都为1，则该位的结果值为1，否则为0。<br>| 按位或 两个相应的二进制位中只要有一个为1，该位的结果值为1。<br>^ 按位异或 若参加运算的两个二进制位值相同则为0，否则为1。<br>还有&lt;&lt;和&gt;&gt;。<br>在这个题目中，我学到了&amp;符号的运用，也明白了按位运算中&amp;和|的区别，其中&amp;的用法是取二进制中我所要的<br>位置，而|则是给我要取1的位置赋值，再者我也学到了移位&lt;&lt;和&gt;&gt;的运用，题目中的第四位，我用的是int字符<br>类型，所以我用&amp;0xff的方法来取值，高四位直接用的移位，最终我的代码是这样的。<br>#include &lt;stdio.h&gt;</p>
-<p>int main()</p>
-<p>{</p>
-<p>unsigned int a;</p>
-<p>scanf(“%d”,&amp;a);</p>
-<p>Printf (“the top four digits are% u \ \ n”, a &gt; &gt; 28);</p>
-<p>Printf (“the lower four digits are% u \ \ n”, a&amp;0xff);</p>
-<p>return 0;</p>
-<p>}<br>我认为这就是唯一的解法了，但是老师的讲评让我学到了一个新的思路。<br>在取低四位时还是用移位的方法，直接用（a&lt;&lt;28）&gt;&gt;28，这是我没有想到的，这确实让我更深刻理解了移位的<br>作用。<br>而在学按位运算时，还有一个符号^，这个符号用来对指定位置的翻转，我觉得这个可以用来取一个无符号数的<br>指定位置的反码，现在的学习和题目中暂时还用不到这个符号，后期希望能更多用到|和^符号。</p>
+        <p>初入WEB<br>了解到了两种请求http方式<br>1、get<br>2、post<br>两者的区别为<br>1、GET在浏览器回退时是无害的，而POST会再次提交请求。<br>2、GET产生的URL地址可以被Bookmark，而POST不可以。<br>3、GET请求会被浏览器主动cache，而POST不会，除非手动设置。<br>4、GET请求只能进行url编码，而POST支持多种编码方式。<br>5、GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。<br>6、GET请求在URL中传送的参数是有长度限制的，而POST么有。<br>对参数的数据类型，GET只接受ASCII字符，而POST没有限制。<br>7、GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息。<br>8、GET参数通过URL传递，POST放在Request body中。</p>
+<p>and DOS命令<br>1、用*可以代替0或多个字符<br>2、用？可以代替一个字符<br>查看命令<br>1、cd 进入文件夹<br>2、dir 显示目录下的目录和文件<br>3、more 查看文件内容<br>4、type 查看文件内容<br>操作命令<br>1、md 创建文件夹<br>2、rd 删除空文件夹<br>3、copy 复制<br>4、del 删除<br>5、ren 重命名文件</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/10/23/C-tx/" data-id="ckv3yiblu0001uww915u77g76" data-title="C tx" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/09/web1/" data-id="ckvs5vua100006cw9bmj29a5g" data-title="web1" class="article-share-link">Share</a>
       
       
       
@@ -118,19 +111,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2021/11/09/web1/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          web1
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/09/19/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2021/10/23/C-tx/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">C tx</div>
     </a>
   
 </nav>

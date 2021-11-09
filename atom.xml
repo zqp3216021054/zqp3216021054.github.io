@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-23T15:40:08.047Z</updated>
+  <updated>2021-11-09T14:00:39.646Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>web1</title>
+    <link href="http://example.com/2021/11/09/web1/"/>
+    <id>http://example.com/2021/11/09/web1/</id>
+    <published>2021-11-09T13:54:11.000Z</published>
+    <updated>2021-11-09T14:00:39.646Z</updated>
+    
+    <content type="html"><![CDATA[<p>初入WEB<br>了解到了两种请求http方式<br>1、get<br>2、post<br>两者的区别为<br>1、GET在浏览器回退时是无害的，而POST会再次提交请求。<br>2、GET产生的URL地址可以被Bookmark，而POST不可以。<br>3、GET请求会被浏览器主动cache，而POST不会，除非手动设置。<br>4、GET请求只能进行url编码，而POST支持多种编码方式。<br>5、GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。<br>6、GET请求在URL中传送的参数是有长度限制的，而POST么有。<br>对参数的数据类型，GET只接受ASCII字符，而POST没有限制。<br>7、GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息。<br>8、GET参数通过URL传递，POST放在Request body中。</p><p>and DOS命令<br>1、用*可以代替0或多个字符<br>2、用？可以代替一个字符<br>查看命令<br>1、cd 进入文件夹<br>2、dir 显示目录下的目录和文件<br>3、more 查看文件内容<br>4、type 查看文件内容<br>操作命令<br>1、md 创建文件夹<br>2、rd 删除空文件夹<br>3、copy 复制<br>4、del 删除<br>5、ren 重命名文件</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;初入WEB&lt;br&gt;了解到了两种请求http方式&lt;br&gt;1、get&lt;br&gt;2、post&lt;br&gt;两者的区别为&lt;br&gt;1、GET在浏览器回退时是无害的，而POST会再次提交请求。&lt;br&gt;2、GET产生的URL地址可以被Bookmark，而POST不可以。&lt;br&gt;3、GET请求会被</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>C tx</title>
